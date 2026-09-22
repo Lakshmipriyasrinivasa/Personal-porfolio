@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import priyaPhoto from "../assets/priya.jpeg";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
             View Projects
           </a>
 
-          <a href="/resume.pdf" className="btn-secondary" download>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} className="btn-secondary" download>
             Download Resume
           </a>
         </div>
@@ -35,7 +36,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-image">
-        <img src="/src/assets/priya.jpeg" alt="Lakshmipriya" />
+        <img src={priyaPhoto} alt="Lakshmipriya" />
       </div>
     </section>
   );

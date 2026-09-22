@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import priyaPhoto from "../assets/priya.jpeg";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="about-container">
 
         <div className="about-image">
-          <img src="/src/assets/priya.jpeg" alt="Lakshmipriya" />
+          <img src={priyaPhoto} alt="Lakshmipriya" />
         </div>
 
         <div className="about-content">
